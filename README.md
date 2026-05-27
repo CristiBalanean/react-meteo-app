@@ -72,9 +72,3 @@ src/
 ## API
 
 This app uses the [OpenWeatherMap Forecast API](https://openweathermap.org/forecast5) to fetch 5-day weather data in 3-hour intervals. The data is grouped by day to calculate daily highs and lows.
-
----
-
-## License
-
-© 2026 Cristi Balanean. All rights reserved.
