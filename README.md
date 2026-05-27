@@ -1,16 +1,80 @@
-# React + Vite
+# ☁️ Meteo — Weather Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean, responsive weather dashboard built with React. Search any city and get real-time weather data including current conditions, a 5-day forecast, and a temperature overview chart.
 
-Currently, two official plugins are available:
+🔗 **Live Site:** [cristibalanean.github.io/react-meteo-app](https://cristibalanean.github.io/react-meteo-app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Real-time weather data** — current temperature, feels like, humidity, and wind speed
+- **5-day forecast** — daily high/low temperatures with weather icons
+- **Temperature chart** — visual overview of the week's temperatures using Recharts
+- **City search** — look up weather for any city worldwide
+- **°C / °F toggle** — switch between Celsius and Fahrenheit
+- **Error handling** — friendly message when a city isn't found
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+- **React** — UI framework
+- **Vite** — Build tool & dev server
+- **Recharts** — Charting library for temperature visualization
+- **OpenWeatherMap API** — Weather data provider
+- **GitHub Pages** — Hosting & deployment
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v18+)
+
+### Installation
+
+```bash
+git clone https://github.com/CristiBalanean/react-meteo-app.git
+cd react-meteo-app
+npm install
+```
+
+### Development
+
+```bash
+npm run dev
+```
+
+Opens at `http://localhost:5173`
+
+### Build & Deploy
+
+```bash
+npm run build
+npm run deploy
+```
+
+---
+
+## Project Structure
+
+```
+src/
+├── App.jsx          # Main component — weather logic, API calls, UI
+├── index.css        # All styles
+└── main.jsx         # Entry point
+```
+
+---
+
+## API
+
+This app uses the [OpenWeatherMap Forecast API](https://openweathermap.org/forecast5) to fetch 5-day weather data in 3-hour intervals. The data is grouped by day to calculate daily highs and lows.
+
+---
+
+## License
+
+© 2026 Cristi Balanean. All rights reserved.
